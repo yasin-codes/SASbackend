@@ -1,0 +1,22 @@
+GET http://localhost:6000/products
+###
+POST http://localhost:6000/products
+Content-Type: application/json
+
+{
+    "nameProduct":"Nasi Pecel",
+    "categories":"Makanan",
+    "madeIn":"Madiun"
+}
+###
+PATCH http://localhost:6000/products/63c16b0f24a11fc0dc1a591a
+Content-Type: application/json
+
+{
+    "madeIn":"Jkt"
+}
+
+###
+
+DELETE http://localhost:6000/products/63c16a8124a11fc0dc1a5915
+###
